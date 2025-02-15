@@ -1,0 +1,5 @@
+robotframework-mainframe3270==4.1    
+robotframework==7.2.2
+robotframework-faker==5.0.0
+pyyaml==6.0.2
+Dialogs==1.0
