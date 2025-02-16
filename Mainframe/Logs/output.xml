@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-02-16T19:17:30.411605" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-02-16T19:32:21.742933" rpa="false" schemaversion="5">
 <suite id="s1" name="loginTK4" source="C:\GitClones\Port_Robot\Mainframe\Tests\loginTK4.robot">
 <test id="s1-t1" name="Caso de Teste 1 - Validar alteração de senha inicial com sucesso" line="8">
 <kw name="Iniciar conexão Mainframe" owner="keywordslocal" type="SETUP">
@@ -9,11 +9,11 @@
 <doc>Create a connection to an IBM3270 mainframe with the default port 23.
 To establish a connection, only the hostname is required.
 Optional parameters include logical unit name (LU) and port.</doc>
-<status status="PASS" start="2025-02-16T19:17:30.896563" elapsed="0.528075"/>
+<status status="PASS" start="2025-02-16T19:32:22.179544" elapsed="0.526654"/>
 </kw>
 <arg>${HOST.local}</arg>
 <arg>${PORT.local}</arg>
-<status status="PASS" start="2025-02-16T19:17:30.895164" elapsed="0.529629"/>
+<status status="PASS" start="2025-02-16T19:32:22.178042" elapsed="0.528295"/>
 </kw>
 <kw name="Dado que estou na aplicação" owner="keywordslocal">
 <kw name="Wait Until String" owner="Mainframe3270">
@@ -21,9 +21,9 @@ Optional parameters include logical unit name (LU) and port.</doc>
 <arg>timeout=10s</arg>
 <doc>Wait until a string exists on the mainframe screen to perform the next step. If the string does not appear
 in 5 seconds, the keyword will raise an exception. You can define a different timeout.</doc>
-<status status="PASS" start="2025-02-16T19:17:31.425564" elapsed="1.829877"/>
+<status status="PASS" start="2025-02-16T19:32:22.707064" elapsed="1.817644"/>
 </kw>
-<status status="PASS" start="2025-02-16T19:17:31.425210" elapsed="1.830336"/>
+<status status="PASS" start="2025-02-16T19:32:22.706702" elapsed="1.818112"/>
 </kw>
 <kw name="Quando realizo o login na aplicação" owner="keywordslocal">
 <kw name="Write Bare In Position" owner="Mainframe3270">
@@ -31,32 +31,32 @@ in 5 seconds, the keyword will raise an exception. You can define a different ti
 <arg>23</arg>
 <arg>12</arg>
 <doc>Send only the string to the screen at screen coordinates ``ypos`` / ``xpos``.</doc>
-<status status="PASS" start="2025-02-16T19:17:33.256567" elapsed="0.001863"/>
+<status status="PASS" start="2025-02-16T19:32:24.525826" elapsed="0.001962"/>
 </kw>
 <kw name="Send Enter" owner="Mainframe3270">
 <doc>Send an Enter to the screen.</doc>
-<status status="PASS" start="2025-02-16T19:17:33.258584" elapsed="0.513925"/>
+<status status="PASS" start="2025-02-16T19:32:24.527953" elapsed="0.519199"/>
 </kw>
 <kw name="Write Bare" owner="Mainframe3270">
 <arg>${PASSWORD}</arg>
 <doc>Send only the string to the screen at the current cursor location.</doc>
-<status status="PASS" start="2025-02-16T19:17:33.772696" elapsed="0.000723"/>
+<status status="PASS" start="2025-02-16T19:32:25.047441" elapsed="0.001452"/>
 </kw>
 <kw name="Send Enter" owner="Mainframe3270">
 <doc>Send an Enter to the screen.</doc>
-<status status="PASS" start="2025-02-16T19:17:33.773574" elapsed="0.780612"/>
+<status status="PASS" start="2025-02-16T19:32:25.049061" elapsed="0.762583"/>
 </kw>
 <kw name="Send Enter" owner="Mainframe3270">
 <doc>Send an Enter to the screen.</doc>
-<status status="PASS" start="2025-02-16T19:17:34.554490" elapsed="0.507530"/>
+<status status="PASS" start="2025-02-16T19:32:25.811900" elapsed="0.506639"/>
 </kw>
 <kw name="Send Enter" owner="Mainframe3270">
 <doc>Send an Enter to the screen.</doc>
-<status status="PASS" start="2025-02-16T19:17:35.062253" elapsed="0.507306"/>
+<status status="PASS" start="2025-02-16T19:32:26.318756" elapsed="0.507387"/>
 </kw>
 <arg>${USER.local}</arg>
 <arg>${PASSWORD.local}</arg>
-<status status="PASS" start="2025-02-16T19:17:33.255805" elapsed="2.313903"/>
+<status status="PASS" start="2025-02-16T19:32:24.525091" elapsed="2.301217"/>
 </kw>
 <kw name="Então deve acessar o menu principal e efetuar o logoff" owner="keywordslocal">
 <kw name="Wait Until String" owner="Mainframe3270">
@@ -64,64 +64,66 @@ in 5 seconds, the keyword will raise an exception. You can define a different ti
 <arg>timeout=10s</arg>
 <doc>Wait until a string exists on the mainframe screen to perform the next step. If the string does not appear
 in 5 seconds, the keyword will raise an exception. You can define a different timeout.</doc>
-<status status="PASS" start="2025-02-16T19:17:35.570530" elapsed="0.004427"/>
+<status status="PASS" start="2025-02-16T19:32:26.827247" elapsed="0.004289"/>
 </kw>
 <kw name="Write Bare" owner="Mainframe3270">
 <arg>txt=X</arg>
 <doc>Send only the string to the screen at the current cursor location.</doc>
-<status status="PASS" start="2025-02-16T19:17:35.575118" elapsed="0.000415"/>
+<status status="PASS" start="2025-02-16T19:32:26.831700" elapsed="0.000385"/>
 </kw>
 <kw name="Send Enter" owner="Mainframe3270">
 <doc>Send an Enter to the screen.</doc>
-<status status="PASS" start="2025-02-16T19:17:35.575685" elapsed="0.535340"/>
+<status status="PASS" start="2025-02-16T19:32:26.832185" elapsed="0.533925"/>
 </kw>
 <kw name="Wait Until String" owner="Mainframe3270">
 <arg>txt=READY</arg>
 <arg>timeout=10s</arg>
 <doc>Wait until a string exists on the mainframe screen to perform the next step. If the string does not appear
 in 5 seconds, the keyword will raise an exception. You can define a different timeout.</doc>
-<status status="PASS" start="2025-02-16T19:17:36.111238" elapsed="0.002165"/>
+<status status="PASS" start="2025-02-16T19:32:27.366336" elapsed="0.002366"/>
 </kw>
 <kw name="Write Bare" owner="Mainframe3270">
 <arg>txt=LOGOFF</arg>
 <doc>Send only the string to the screen at the current cursor location.</doc>
-<status status="PASS" start="2025-02-16T19:17:36.113553" elapsed="0.000509"/>
+<status status="PASS" start="2025-02-16T19:32:27.368848" elapsed="0.000547"/>
 </kw>
 <kw name="Send Enter" owner="Mainframe3270">
 <doc>Send an Enter to the screen.</doc>
-<status status="PASS" start="2025-02-16T19:17:36.114168" elapsed="0.553949"/>
+<status status="PASS" start="2025-02-16T19:32:27.369508" elapsed="0.545848"/>
 </kw>
 <kw name="Wait Until String" owner="Mainframe3270">
 <arg>txt=Logon</arg>
 <arg>timeout=10s</arg>
 <doc>Wait until a string exists on the mainframe screen to perform the next step. If the string does not appear
 in 5 seconds, the keyword will raise an exception. You can define a different timeout.</doc>
-<status status="PASS" start="2025-02-16T19:17:36.668437" elapsed="0.009542"/>
+<status status="PASS" start="2025-02-16T19:32:27.915569" elapsed="0.009218"/>
 </kw>
-<status status="PASS" start="2025-02-16T19:17:35.570204" elapsed="1.107873"/>
+<status status="PASS" start="2025-02-16T19:32:26.826928" elapsed="1.097957"/>
 </kw>
 <kw name="Encerrar conexão Mainframe" owner="keywordslocal" type="TEARDOWN">
 <kw name="Take Screenshot" owner="Mainframe3270">
-<msg time="2025-02-16T19:17:36.680321" level="INFO" html="true">&lt;iframe src="./screenshot_1739744256679.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
+<msg time="2025-02-16T19:32:27.926965" level="INFO" html="true">&lt;iframe src="./screenshot_1739745147926.html" height="410" width="670"&gt;&lt;/iframe&gt;</msg>
 <doc>Generate a screenshot of the IBM 3270 Mainframe in a html format. The
 default folder is the log folder of RobotFramework, if you want change see the `Set Screenshot Folder`.</doc>
-<status status="PASS" start="2025-02-16T19:17:36.678896" elapsed="0.001546"/>
+<status status="PASS" start="2025-02-16T19:32:27.925431" elapsed="0.001643"/>
 </kw>
 <kw name="Close Connection" owner="Mainframe3270">
 <doc>Close the current connection.</doc>
-<status status="PASS" start="2025-02-16T19:17:36.680590" elapsed="0.000425"/>
+<status status="PASS" start="2025-02-16T19:32:27.927216" elapsed="0.000506"/>
 </kw>
-<status status="PASS" start="2025-02-16T19:17:36.678558" elapsed="0.002540"/>
+<status status="PASS" start="2025-02-16T19:32:27.925202" elapsed="0.002576"/>
 </kw>
-<status status="PASS" start="2025-02-16T19:17:30.894413" elapsed="5.786816"/>
+<tag>login</tag>
+<status status="PASS" start="2025-02-16T19:32:22.177237" elapsed="5.750730"/>
 </test>
-<status status="PASS" start="2025-02-16T19:17:30.412946" elapsed="6.269203"/>
+<status status="PASS" start="2025-02-16T19:32:21.744240" elapsed="6.184576"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">login</stat>
 </tag>
 <suite>
 <stat name="loginTK4" id="s1" pass="1" fail="0" skip="0">loginTK4</stat>
