@@ -1,5 +1,5 @@
 *** Settings ***
-Resource          ../Screens/setuplocal.resource
+Resource          ../Screens/setuplocal.resource 
 
 *** Keywords ***
 Iniciar conexão Mainframe
