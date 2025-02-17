@@ -28,3 +28,22 @@ Dado que realizo o login na aplicação
     Dado que estou na aplicação
     Quando realizo o login na aplicação    ${USER.pub400}    ${PASSWORD.pub400}
     Então deve acessar o menu principal
+
+E acesso a tela de alteração de dados
+    Write    txt=1
+    Wait Until String    txt=Change your user profile    timeout=10s
+    Write   txt=9
+
+Quando edito o campo descrição do perfil
+    Wait Until String    txt=Text 'description' . . . . . . . TEXT   timeout=10s
+    ${description}=    FakerLibrary.Text    max_nb_chars=20
+    Take Screenshot
+    Delete Field    11    50
+    Take Screenshot
+    Write Bare In Position    =${description}    ypos=11    xpos=50
+    Take Screenshot
+    Send Enter
+
+Então vizualizo a mensagem
+    [Arguments]    ${message}
+    Wait Until String    txt=${message}    timeout=10s
