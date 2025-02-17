@@ -5,7 +5,6 @@ Resource          ../Screens/setup.resource
 Iniciar conexão Mainframe
     [Arguments]    ${host}    ${port}
     Open Connection    host=${host}
-    Set Screenshot Folder    ${EXECDIR}/Mainframe/Logs/Screenshot
 
 Encerrar conexão Mainframe
     Take Screenshot    
@@ -47,3 +46,4 @@ Quando edito o campo descrição do perfil
 Então vizualizo a mensagem
     [Arguments]    ${message}
     Wait Until String    txt=${message}    timeout=10s
+    Page Should Contain String    txt=${message}
