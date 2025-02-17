@@ -9,5 +9,5 @@ Library          BuiltIn
 Resource          ../Keywords/keywordslocal.resource
 
 Variables         ambiente.yaml
-
+Variables         ../Data/credenciais.yaml
 

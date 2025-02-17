@@ -4,9 +4,3 @@ HOST:
 PORT:
   pub400: 23
   local: 3270
-USER:
-  pub400: DELUCA719
-  local: TSO HERC01
-PASSWORD:
-  pub400: 010919
-  local: HERC01

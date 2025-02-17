@@ -23,3 +23,8 @@ Quando realizo o login na aplicação
 
 Então deve acessar o menu principal
     Wait Until String    txt=IBM i Main Menu    timeout=10s
+
+Dado que realizo o login na aplicação
+    Dado que estou na aplicação
+    Quando realizo o login na aplicação    ${USER.pub400}    ${PASSWORD.pub400}
+    Então deve acessar o menu principal
