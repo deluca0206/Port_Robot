@@ -1,6 +1,5 @@
 *** Settings ***
 Resource          ../Screens/setuplocal.resource
-Library    Process
 
 *** Keywords ***
 Iniciar conexão Mainframe
@@ -31,4 +30,3 @@ Então deve acessar o menu principal e efetuar o logoff
     Write Bare    txt=LOGOFF
     Send Enter
     Wait Until String    txt=Logon    timeout=10s
-    

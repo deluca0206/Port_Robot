@@ -1,6 +1,5 @@
 *** Settings ***
 Resource          ../Screens/setup.resource
-Library    Process
 
 *** Keywords ***
 Iniciar conexão Mainframe
