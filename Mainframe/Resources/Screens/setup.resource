@@ -10,5 +10,6 @@ Resource          ../Keywords/keywords.resource
 
 Variables         ambiente.yaml
 Variables         ../Data/credenciais.yaml
+Variables         ../Data/textos.yaml
 
 
