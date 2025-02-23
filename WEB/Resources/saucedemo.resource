@@ -6,7 +6,7 @@ ${URL}    https://www.saucedemo.com/
 
 *** Keywords ***
 Abrir o Navegador
-    Open Browser    ${URL}    chrome
+    Open Browser    ${URL}    chrome    
 
 Fechar o Navegador
     Capture Page Screenshot    
