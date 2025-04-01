@@ -9,7 +9,7 @@ Abrir o Navegador
     Open Browser    ${URL}    chrome    
 
 Fechar o Navegador
-    Capture Page Screenshot    
+    Capture Page Screenshot
     Close Browser
 
 Acessar a home page
